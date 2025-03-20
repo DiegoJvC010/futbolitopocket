@@ -330,14 +330,14 @@ fun SoccerFieldCanvas(
             //Dibujar las porterias
             //Se dibuja un rectangulo para la porteria superior
             drawRect(
-                color = Color.White,
+                color = Color.Red,
                 topLeft = Offset(goalTopLeftX, 0f),
                 size = Size(goalWidth, goalHeight),
                 style = Stroke(width = lineWidth)
             )
             //Se dibuja un rectangulo para la porteria inferior
             drawRect(
-                color = Color.White,
+                color = Color.Blue,
                 topLeft = Offset(goalTopLeftX, h - goalHeight),
                 size = Size(goalWidth, goalHeight),
                 style = Stroke(width = lineWidth)

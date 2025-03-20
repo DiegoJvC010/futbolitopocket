@@ -5,6 +5,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.unit.dp
 
@@ -31,9 +32,20 @@ fun MainScreen() {
                 .height(headerHeight),
             contentAlignment = Alignment.Center
         ) {
-            Text(
-                text = "Canitas: $topGoalCount   |   Camposable: $bottomGoalCount"
-            )
+            Row {
+                Text(
+                    text = "Canitas: $topGoalCount",
+                    color = Color.Blue
+                )
+                Text(
+                    text = "   |   ",
+                    color = Color.Black
+                )
+                Text(
+                    text = "Camposable: $bottomGoalCount",
+                    color = Color.Red
+                )
+            }
         }
         //Zona del campo de futbol
         Box(
